@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MusicApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <style>
+
+    body {
+      width: 600px;
+      margin: 0 auto;
+      /* display: flex */
+      font-family: 'Poiret One', cursive;
+
+    }
+
+    .title {
+      font-family: 'Monoton', cursive;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+
+      background-color: lightgrey
+    }
+
+    nav div {
+      padding-top: 30px;
+      padding-right: 10px;
+   }
+
+    nav a {
+      text-decoration: none;
+      font-family: 'Monoton';
+    }
+    nav a:first-child {
+      margin-right: 20px;
+    }
+
+    input {
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      font-family: 'Josefin Sans', sans-serif;
+      margin-top: 10px;
+      width: 80px;
+      height: 30px;
+      background-color: black;
+      color: white;
+    }
+
+
+    main {
+      /* display: flex; */
+      width: 600px;
+      margin: 0 auto;
+      /* text-align: center; */
+       /* flex-direction: column; */
+    }
+
+    form {
+      margin: 0 auto;
+    }
+
+
+
+    </style>
+  </head>
+
+  <body>
+
+
+     <nav>
+       <h1 class = 'title'>Music App</h1>
+       <div>
+         <a href="/session/new">LOG IN</a>
+         <a href="/users/new">SIGN UP</a>
+
+       </div>
+     </nav>
+     <main>
+       <%= yield %>
+       <% if flash[:errors] %>
+       <p><%= flash[:errors].join(", ") %></p>
+       <% end %>
+
+     </main>
+
+
+  </body>
+</html>

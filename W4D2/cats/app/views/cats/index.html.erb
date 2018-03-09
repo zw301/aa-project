@@ -1,0 +1,14 @@
+<h1>All Cats</h1>
+
+<ul>
+  <% Cat.find_each do |cat| %>
+
+    <li>
+      <%= cat.name %>
+      <%= link_to 'show cat', cat_url(cat) %>
+    </li>
+  <% end %>
+</ul>
+
+
+<%= link_to 'make kitty', new_cat_url %>
