@@ -1,0 +1,17 @@
+<h4>This Comment</h4>
+
+  <%= @comment.content %>
+
+  <%= link_to 'comment_show_page', comment_url(@comment)  %>
+  <hr>
+
+  <h4>Add Comment</h4>
+
+  <form action="<%= comments_url %>" method="post">
+    <label>
+      Comment
+      <input type="text" name="comment[content]" value="">
+    </label>
+
+    <input type="submit" name="" value="Add Comment">
+  </form>

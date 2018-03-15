@@ -1,0 +1,19 @@
+<h1> <%= @post.title %></h1>
+<h2>  <%= @post.url %></h2>
+<h3>  <%= @post.content %></h3>
+
+<%= link_to 'Edit Post', edit_post_url(@post) %>
+
+<hr>
+
+<h4>Top Comments</h4>
+<% apples = @post.comments.where(parent_comment_id: nil)%>
+<% apples.each do |comment| %>
+<%= link_to comment.content, comment_url(comment) %>
+<% end %>
+
+
+<!-- <h4>All Comments</h4>
+<#% @post.comments.each do |comment| %>
+  <#%= comment.content %>
+<#% end %> -->
