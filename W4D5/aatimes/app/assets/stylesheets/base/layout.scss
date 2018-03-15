@@ -1,0 +1,310 @@
+/* Define application-wide selectors here!*/
+
+html {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	// ...
+	width: 80%;
+	margin: 0 auto;
+	font-family: $sans-serif;
+	font-size: 12px;
+}
+
+header, header ul{
+	display: flex;
+	justify-content:space-between;
+}
+
+// header {
+// 	border-bottom: 1px solid $lightest-gray;
+// }
+
+.left-nav ul li{
+	margin: 5px;
+}
+
+#sections-sidebar-btn{
+	padding: 5px;
+}
+
+#search-modal-btn {
+	// background-color: $lightest-gray;
+ 	border-radius: 3px;
+	display: inline-block;
+	padding: 5px;
+}
+
+#search-modal-btn:hover, .right-nav ul li i:hover {
+	background-color: $lightest-gray;
+}
+
+.right-nav ul li {
+	margin: 5px 0;
+	font-family: $serif;
+	padding: 4px;
+}
+
+
+.right-nav ul li button{
+	font-size: 9px;
+	font-family: $sans-serif;
+	font-weight: bold;
+	color: #fff;
+	background-color: $light-blue;
+	padding: 5px;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.right-nav ul li button:hover {
+	background-color: $dark-blue;
+}
+
+ .right-nav ul li i {
+ 	padding: 5px;
+ 	border-radius: 3px;
+	font-size: 12px;
+ }
+
+
+
+
+button {
+	// background-color:
+	// border-color:$dark-blue;
+	// color:
+	// font-weight:
+	// padding:
+	// border-radius:
+	// transition:
+	// font-family:
+	// text-transform:
+	// font-size:
+	// text-align:
+}
+
+button:hover {
+	// background-color:
+	// border-color: $dark-blue;
+	// background-color: $dark-blue;
+
+}
+
+/*
+	Header Rules
+*/
+
+hr {
+	border: 0;
+	height: 1px;
+	background-color: $light-gray;
+}
+
+.hr-top, .hr-bottom {
+	width: 100%;
+	margin: 0;
+	font-size: 10px;
+}
+
+.hr-bottom {
+	margin-bottom: 8px;
+}
+
+.hr-top li {
+	margin: 0 6px;
+}
+
+.hr-top li a, .hr-bottom li a {
+	color: black;
+}
+.hr-top li a:hover, .hr-bottom li a:hover {
+	text-decoration: underline;
+}
+
+.hr-top {
+	height: 2px;
+	margin-bottom: 1px;
+	position: relative;
+	top: -22px;
+	// background-color: blue;
+	height:12px;
+	border: 1px solid $light-gray;
+	border-bottom: none;
+	background-color: #fff;
+	padding-top: 3px;
+	width: 170px;
+}
+
+// .hr-top li{
+// 	display: inline-block;
+// 	border: 1px solid red;
+// }
+
+.masthead img {
+	width: 300px;
+}
+
+.hr-top li a {
+	color: $dark-gray;
+}
+
+.hr-bottom li {
+	padding: 0 10px;
+	border-right: 1px solid $light-gray;
+}
+
+.hr-bottom li:last-of-type  {
+	border-right:none;
+}
+.masthead, .masthead ul{
+	display: flex;
+	justify-content: center;
+}
+
+#stock:hover, #degree:hover {
+	color: grey;
+}
+
+#stock span {
+	color: green;
+}
+
+
+
+#gear-dropdown {
+	// display: flex;
+	// flex-direction: column;
+	position: absolute;
+	border: 1px solid $light-gray;
+	border-radius: 5px;
+	background-color: #fff;
+	z-index: 1;
+	box-shadow: -1px 4px 6px 1px rgba(0, 0, 0, 0.09);
+}
+
+
+#gear-dropdown ul{
+	flex-direction: column;
+	width: 170px;
+	// margin: 0 -5px 0px 5px;
+	padding: 5px;
+}
+
+
+#gear-dropdown ul li{
+	flex-direction: column;
+	font-size: 9px;
+	color: $dark-gray;
+	margin: 2px 0;
+}
+
+#gear-dropdown ul li:hover{
+	background-color: $light-gray;
+	border-radius: 2px;
+}
+
+#gear-dropdown ul li:first-child{
+	font-size: 6px;
+}
+
+#gear-dropdown ul li:first-child:hover{
+	background-color: white;
+}
+
+
+#gear-dropdown ul li a {
+	color: $dark-gray;
+}
+
+.right-nav .hidden{
+	display: none;
+}
+
+main{
+	padding-top: 10px;
+}
+
+main section{
+	margin: 0 10px;
+}
+
+.grid-container{
+	display: flex;
+}
+
+.grid-item1{
+	width: 18%;
+}
+
+.grid-item2{
+	width: 50%;
+}
+
+.grid-item3{
+	width: 30%;
+}
+
+.grid-item2 iframe{
+	width: 100%;
+	height: 100%;
+}
+main {
+		font-family: $serif;
+}
+
+main .left h1{
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+main .left h4 {
+	color: $gray;
+	font-weight: normal;
+	font-size: 10px;
+}
+main .left li {
+	list-style:initial;
+	margin-bottom: 10px;
+	font-size: 10px;
+	line-height: 17px;
+}
+
+main .left a{
+	text-decoration: underline;
+	font-size: 9px;
+	font-family: $sans-serif;
+	position: relative;
+	left: -10px;
+}
+
+main .mid div{
+	margin: 10px 0px;
+}
+
+main .mid h5{
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+main .mid h6{
+	color: $gray;
+	margin: 6px 0px
+}
+
+main .mid p{
+	font-size: 10px;
+}
+
+main .content {
+	display: flex;
+	font-size: 10px;
+
+}
+
+#con_right {
+
+}
