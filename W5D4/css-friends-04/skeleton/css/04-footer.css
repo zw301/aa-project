@@ -1,0 +1,33 @@
+/* PHASE 4: Footer */
+footer {
+  width: 900px;
+  height: 40px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-top: 0;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #aaa;
+  padding: 10px 0;
+  font-size: 14px;
+  /* height: 40px; */
+}
+
+.footer-copy {
+  padding: 20px;
+  /* border: 1px solid red; */
+  /* margin: 20px 0; */
+}
+
+.footer-links {
+  padding: 20px;
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+.footer-links li {
+  padding: 0 10px;
+  /* border: 1px solid red; */
+}
