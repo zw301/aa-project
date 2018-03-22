@@ -1,0 +1,33 @@
+/* PHASE 11: Icons */
+.post-footer-tools li a {
+  font-size: 30px;
+}
+
+.fa-comment-alt, .fa-user, .fa-star, .fa-images {
+  /* border: 10px solid red; */
+  padding-right: 5px;
+}
+
+.icon-comment {
+  color: grey;
+}
+
+.icon-reblog {
+  color: grey;
+}
+
+.icon-favorite {
+  color: grey;
+}
+
+.icon-comment:hover {
+  color: blue;
+}
+
+.icon-reblog:hover {
+  color: green;
+}
+
+.icon-favorite:hover {
+  color: red;
+}
