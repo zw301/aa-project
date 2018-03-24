@@ -1,0 +1,33 @@
+body {
+    font-family: 'Poiret One', cursive;
+    /* width: 900px; */
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 20px 10px 10px 20px;
+}
+
+.clock{
+  font-size: 28px;
+  background: orange;
+  border: 1px solid black;
+  color: white;
+  font-weight: bolder;
+  width: 550px;
+  /* height: 80px; */
+  padding:10px;
+  margin: 20px 10px 10px 20px;
+
+}
+p{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
