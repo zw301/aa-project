@@ -1,0 +1,90 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.pokemonList {
+  padding: 0 10px 0 0;
+  width: 300px;
+  height: 900px;
+  overflow: scroll;
+}
+
+.pokemon-index-item {
+  border-top: 1px solid grey;
+  padding: 5px 10px;
+  border-bottom: 1px solid #747474;
+  cursor: pointer;
+}
+
+.pokemon-index-item a{
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.pokemon-index-item a span{
+
+}
+
+.pokemon-index-item a img{
+  width: 50px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.pokemon-index-item:hover {
+    background: gray;
+}
+
+// .pokemon-detail {
+//     float: right;
+// }
+
+.container {
+  display: flex;
+}
+
+.pokemon-detail {
+    flex: 1;
+    border: 5px solid black;
+    margin: 10px;
+    background: #9b59b6;
+}
+
+.pokemon-detail figure img {
+    width: 100%;
+    max-height: 380px;
+}
+
+.pokemon-detail figure {
+    background: orange;
+    border: 6px solid black;
+    padding: 15px;
+}
+
+.pokemon-detail h1 {
+    text-align: center;
+    font-size: 37px;
+    color: black;
+}
+
+.pokemon-detail ul {
+    text-align: center;
+    margin: 10px;
+}
+
+.pokemon-detail ul li {
+    list-style: none;
+    font-size: 29px;
+    color: black;
+    margin: 10px;
+}
+
+.items-list  {
+  display: flex;
+  justify-content: center;
+}
+
+ul.items-list img {
+    height: 100px;
+}
